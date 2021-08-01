@@ -1,0 +1,24 @@
+{
+  "name": "solidity",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.4.0"
+  },
+  "scripts": {
+    "build:dev": "truffle migrations",
+    "build:rinkeby": "truffle migrations --network rinkeby",
+    "verify:rinkeby": "truffle run verify Token --network rinkeby",
+    "coverage": "truffle run coverage",
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "dotenv": "10.0.0",
+    "ganache-cli": "^6.12.2",
+    "solidity-coverage": "^0.7.16",
+    "truffle": "^5.4.3",
+    "truffle-plugin-verify": "^0.5.11",
+  }
+}
